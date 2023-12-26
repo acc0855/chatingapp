@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>PHP in HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Travel Form</title>
 </head>
 <body>
-    <h1>Using PHP in HTML</h1>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+.container{
+    max-width: 80%;
+    background-color: red;
+    padding: 34px;
+    margin: 23px;
+    margin: auto;
 
-   
+}
+.container h3 , p{
+    text-align: center;
+}
+input{
+    display: block;
+    border: 2px solid black;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+    width: 80%;
+    margin: 11px;
+    padding: 7px;
+
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+    </style>
+    <div class="container">
+        <h3>welcome to iit us trip form</h3>
+        <p>enter your details</p>
+        <form action="index.php" method="post" >
+        <input type="text" name="name" id="name" placeholder="enter your name ">
+        <input type="text" name="age" id="age" placeholder="enter your age ">
+        <input type="text" name="gender" id="gender" placeholder="enter your gender ">
+        <input type="text" name="email" id="email" placeholder="enter your email ">
+        <input type="text" name="phone" id="phone" placeholder="enter your email ">
+        <button class = "btn">Submit</button>
+        <button class = "btn">reset</button>
+        
+
+    </form>
+    </div>
+
+    <script>
+
+    </script>
 </body>
- <?php
-        // Your PHP code goes here
-        $message = "Hello, World!";
-        echo "<p>$message</p>";
-    ?>
 </html>
